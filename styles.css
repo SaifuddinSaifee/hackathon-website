@@ -34,6 +34,9 @@ body {
   align-items: center;
   background-color: #333;
   padding: 10px 20px;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
 }
 
 /* Style for the logo */
@@ -45,7 +48,7 @@ body {
 }
 
 /* Style for the navbar */
-.navbar {
+.navlist {
   display: flex;
   justify-content: flex-end;
   list-style: none;
@@ -53,15 +56,19 @@ body {
   padding: 0;
 }
 
-.navbar li {
+.navlist li {
   margin-left: 20px;
 }
 
-.navbar a {
+.navlist a {
   color: white;
   text-decoration: none;
 }
 
-.navbar a:hover {
+.navlist a:hover {
   text-decoration: underline;
+}
+
+#home {
+  
 }
