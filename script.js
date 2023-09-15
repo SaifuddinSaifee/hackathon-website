@@ -6,8 +6,10 @@
 
 document.addEventListener("mousemove", function (event) {
     var cursorShadow = document.querySelector(".cursor-shadow");
-    cursorShadow.style.left = event.clientX + "px";
-    cursorShadow.style.top = event.clientY + "px";
+    var cursorSize = 20; // Adjust this value to match the size of your cursor shadow
+  
+    cursorShadow.style.left = event.clientX - cursorSize / 2 + "px";
+    cursorShadow.style.top = event.clientY - cursorSize / 2 + "px";
   });
   
   document.addEventListener("mouseenter", function () {

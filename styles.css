@@ -17,7 +17,7 @@ font-family: 'Montserrat', sans-serif;
     font-family: "JetBrains Mono", monospace;
     color: white;
     transition: 200ms;
-    border: 1px dashed rgba(255, 0, 0, 0.356);
+    /* border: 1px dashed rgba(255, 0, 0, 0.356); */
 }
 
 .cursor-shadow {
@@ -27,10 +27,11 @@ font-family: 'Montserrat', sans-serif;
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgb(255, 255, 255);
     pointer-events: none;
     z-index: 9999;
     display: none;
+    filter: blur(5px);
   }
   
   .cursor-shadow.active {
@@ -39,6 +40,7 @@ font-family: 'Montserrat', sans-serif;
 
 html {
     background-color: black;
+    scroll-behavior: smooth;
 }
 
 /* Navbar section */
@@ -56,10 +58,10 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: sticky;
-    top: 0;
-    z-index: 100;
     border-bottom: 2px solid white;
+    z-index: 100;
+    top: 0;
+    position: sticky;
 }
 
 .navbar {
@@ -219,4 +221,265 @@ html {
     color: black;
     font-size: 1.5rem;
     margin: 1rem 0;
+}
+
+.trackCard p {
+    color: black;
+}
+
+#Rewards {
+    font-family: 'Montserrat', sans-serif;
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#Rewards h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+}
+
+.rewardCards {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rewardCard {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 300px;
+    width: 300px;
+    margin: 5rem 2rem;
+    background: linear-gradient(60deg, #b5a5fb, #576ae8);
+    color: rgb(255, 255, 255);
+    border: 2px solid;
+    border-radius: 50%;
+}
+
+.rewardCard h4 {
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.rewardCard p {
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+#reward1 {
+    scale: 1
+}
+#reward1:hover {
+    scale: 0.97
+}
+
+#reward2 {
+    scale: 1.2
+}
+#reward2:hover {
+    scale: 1.17
+}
+
+#reward3 {
+    scale: 0.9
+}
+#reward3:hover {
+    scale: 0.87
+}
+
+
+/* Mentor */
+#team {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 2rem;
+}
+
+#team h1 {
+    font-size: 2.6rem;
+    margin: 3rem;
+    font-weight: 900;
+}
+
+.mentors {
+    margin: 1rem;
+    margin-bottom: 5rem;
+}
+
+.mentors h3 {
+    font-size: 2rem;
+    margin-top: 0.2rem;
+}
+
+.mentors-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.mentor {
+    height: 200px;
+    width: 200px;
+    border: 2px solid white;
+    border-radius: 2rem;
+    border: 3px 1px 1px 3px;
+    margin: 2rem;
+}
+
+.mentor h4 {
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+
+.team-img {
+    height: 200px;
+    width: 200px;
+    border: none;
+    border-radius: inherit;
+}
+
+/* Orgs */
+
+.org-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.organizers h3 {
+    font-size: 2rem;
+    margin-top: 0.2rem;
+}
+
+.organizer {
+    height: 200px;
+    width: 200px;
+    border: 2px solid white;
+    border-radius: 2rem;
+    border: 3px 1px 1px 3px;
+    margin: 2rem;
+}
+
+.organizer h4 {
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+
+/* Sponsors */
+
+#sponsors {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 2rem;
+}
+
+#sponsors h1 {
+    font-size: 2.6rem;
+    margin: 3rem;
+    font-weight: 900;
+}
+
+.sponsors-list {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.spnsr-img {
+    max-width: 33%;
+    margin: 2rem;
+    width: 300px;
+    height: 200px;
+}
+
+/* Faqs */
+
+#faqs {
+    margin-bottom: 5rem;
+}
+
+#faqs h1 {
+    font-size: 2.6rem;
+    text-align: center;
+    margin: 3rem 0;
+    font-weight: 900;
+}
+
+.qna {
+    font-size: 1.4rem;
+    margin: 1rem;
+}
+
+.qna .question {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    margin: 0.9rem 0;
+}
+
+.qna .answer {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    background: -webkit-linear-gradient(45deg, #d0c5ff, #579be8);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0.5rem 0;
+}
+
+/* Footer */
+
+.footer {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: 2px solid white;
+    color: black;
+    padding: 1rem;
+    height: fit-content;
+}
+
+.footer h3 {
+    font-size: 2rem;
+}
+
+.footer h3 a {
+    color: black;
+    /* text-decoration: none; */
+}
+
+.footer .socials{
+    margin: 1rem;
+}
+
+.footer .socials .social a p {
+    color: black;
+    text-align: center;
+    margin: 1rem;
+}
+
+.copyright {
+    font-size: 1rem;
+    color: black;
 }
