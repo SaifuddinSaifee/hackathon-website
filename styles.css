@@ -54,7 +54,7 @@ html {
 
 .nav-section {
     width: 100%;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -70,7 +70,8 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0);
+    backdrop-filter: blur(4px);
     padding: 1rem;
 }
 
