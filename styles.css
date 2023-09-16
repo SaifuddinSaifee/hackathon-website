@@ -25,6 +25,9 @@ font-family: 'Poppins', sans-serif;
 html {
     background-color: black;
     scroll-behavior: smooth;
+    background-image: url(images/pagebg.svg);
+    background-repeat: no-repeat;
+    background-size: auto;
 }
 /* width */
 ::-webkit-scrollbar {
@@ -557,6 +560,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 999;
 }
 
 .footer {
