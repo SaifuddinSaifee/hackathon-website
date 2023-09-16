@@ -1,9 +1,9 @@
 /* Fonts */
 
-/* @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"); */
-@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 /* 
-Montserrat: Thin 100, Thin 100 Italic, ExtraLight 200, ExtraLight 200 Italic, Light 300, Light 300 Italic, Regular 400, Regular 400 Italic, Medium 500, Medium 500 Italic, SemiBold 600, SemiBold 600 Italic, Bold 700, Bold 700 Italic, ExtraBold 800, ExtraBold 800 Italic, Black 900, Black 900 Italic
+Poppins: Thin 100, Thin 100 Italic, ExtraLight 200, ExtraLight 200 Italic, Light 300, Light 300 Italic, Regular 400, Regular 400 Italic, Medium 500, Medium 500 Italic, SemiBold 600, SemiBold 600 Italic, Bold 700, Bold 700 Italic, ExtraBold 800, ExtraBold 800 Italic, Black 900, Black 900 Italic
 JetBrains Mono: Thin 100, Thin 100 Italic, ExtraLight 200, ExtraLight 200 Italic, Light 300, Light 300 Italic, Regular 400, Regular 400 Italic, Medium 500, Medium 500 Italic, SemiBold 600, SemiBold 600 Italic, Bold 700, Bold 700 Italic, ExtraBold 800, ExtraBold 800 Italic
 
 font-family: 'JetBrains Mono', monospace;
@@ -194,6 +194,11 @@ html {
     font-weight: 900;
 }
 
+#about p {
+    font-family: 'Poppins', sans-serif;
+
+}
+
 #Timeline {
     width: 100%;
     margin: 2rem;
@@ -219,7 +224,7 @@ html {
 
 .tlcard h2 {
     margin: 1rem;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Poppins", sans-serif;
     /* font-family: "Poppins", sans-serif; */
 }
 
@@ -332,10 +337,11 @@ html {
 
 .trackCard p {
     color: black;
+    font-family: 'Poppins', sans-serif;
 }
 
 #Rewards {
-    font-family: "Montserrat", sans-serif;
+    /* font-family: "Poppins", sans-serif; */
     margin: 2rem;
     display: flex;
     justify-content: center;
@@ -344,13 +350,13 @@ html {
 }
 
 #Rewards h3 {
-    font-family: "Montserrat", sans-serif;
+    /* font-family: "Poppins", sans-serif; */
     font-size: 1.75rem;
     margin-bottom: 2rem;
 }
 
 .rewardCards {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Poppins", sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -358,7 +364,7 @@ html {
 }
 
 .rewardCard {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Poppins", sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -373,14 +379,14 @@ html {
 }
 
 .rewardCard h4 {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Poppins", sans-serif;
     color: rgb(255, 255, 255);
     font-size: 1.5rem;
     margin: 1rem 0;
 }
 
 .rewardCard p {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Poppins", sans-serif;
     color: rgb(255, 255, 255);
 }
 
@@ -407,7 +413,7 @@ html {
 
 /* Mentor */
 #team {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Poppins", sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -448,8 +454,16 @@ html {
 }
 
 .mentor h4 {
+    margin-top: 8px;
     font-size: 1.2rem;
     font-weight: 900;
+    padding: 2px 8px;
+    /* font-family: 'Poppins', sans-serif; */
+}
+
+.mentor p {
+    font-family: 'Poppins', sans-serif;
+    padding: 2px 8px;
 }
 
 .team-img {
@@ -490,7 +504,7 @@ html {
 /* Sponsors */
 
 #sponsors {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Poppins", sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -537,13 +551,13 @@ html {
 }
 
 .qna .question {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 800;
     margin: 0.9rem 0;
 }
 
 .qna .answer {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 700;
     background: -webkit-linear-gradient(45deg, #d0c5ff, #579be8);
     -webkit-background-clip: text;
