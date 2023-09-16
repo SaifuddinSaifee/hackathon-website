@@ -1,7 +1,7 @@
 /* Fonts */
 
 /* @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"); */
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 /* 
 Montserrat: Thin 100, Thin 100 Italic, ExtraLight 200, ExtraLight 200 Italic, Light 300, Light 300 Italic, Regular 400, Regular 400 Italic, Medium 500, Medium 500 Italic, SemiBold 600, SemiBold 600 Italic, Bold 700, Bold 700 Italic, ExtraBold 800, ExtraBold 800 Italic, Black 900, Black 900 Italic
 JetBrains Mono: Thin 100, Thin 100 Italic, ExtraLight 200, ExtraLight 200 Italic, Light 300, Light 300 Italic, Regular 400, Regular 400 Italic, Medium 500, Medium 500 Italic, SemiBold 600, SemiBold 600 Italic, Bold 700, Bold 700 Italic, ExtraBold 800, ExtraBold 800 Italic
@@ -19,7 +19,7 @@ font-family: 'Poppins', sans-serif;
     font-family: "JetBrains Mono", monospace;
     color: white;
     transition: 200ms;
-    /* border: 1px dashed rgba(255, 0, 0, 0.356); */
+    /* border: 2px dashed rgba(255, 0, 0, 0.3); */
 }
 
 html {
@@ -28,24 +28,23 @@ html {
 }
 /* width */
 ::-webkit-scrollbar {
-  width: 6px;
+    width: 6px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f100; 
+    background: #f1f1f100;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #ffffff;
-  border-radius: 3px;
-
+    background: #ffffff;
+    border-radius: 3px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #ffffff; 
+    background: #ffffff;
 }
 
 /* Navbar section */
@@ -193,11 +192,101 @@ html {
 }
 
 #Timeline {
+    width: 100%;
     margin: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.timeline-cards {
+    width: 100%;
+    margin: 4rem auto;
+}
+
+.tlcard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.tlcard h2 {
+    margin: 1rem;
+    font-family: "Montserrat", sans-serif;
+    /* font-family: "Poppins", sans-serif; */
+}
+
+.tlcard4 h2 {
+    margin: 0.6rem;
+}
+
+.tlcard1,
+.tlcard3 {
+    width: 500px;
+    height: 250px;
+    border-radius: 125px;
+    border: 2px solid white;
+    margin: 1rem;
+    margin-right: auto;
+}
+
+.tlcard2,
+.tlcard4 {
+    width: 500px;
+    height: 250px;
+    border-radius: 125px;
+    border: 1px solid white;
+    margin: 1rem;
+    margin-left: auto;
+}
+
+.tlcard4 {
+    width: 500px;
+    height: 250px;
+    border-radius: 125px;
+    border: 3px solid white;
+    margin: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+    transform: scale(1.25);
+}
+
+.hackday {
+    font-weight: 900;
+    font-size: 4rem;
+    background: linear-gradient(45deg, #b295ff, #19f3e4);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.chev1 {
+    transform: rotate(310deg);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* width: 40%; */
+}
+
+.chev2 {
+    transform: rotate(50deg);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* width: 40%; */
+}
+
+.chev3 {
+    transform: rotate(0deg);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 8rem;
+    margin-top: 4rem;
 }
 
 #Tracks {
@@ -297,7 +386,6 @@ html {
 }
 #reward1:hover {
     scale: 0.97;
-
 }
 
 #reward2 {
@@ -506,4 +594,14 @@ html {
 .copyright {
     font-size: 1rem;
     color: black;
+}
+
+.grainy-grad {
+    filter: contrast(100%) brightness(100%);
+    background: linear-gradient(
+            135deg,
+            rgba(0, 0, 0, 0.778),
+            rgba(68, 68, 68, 0.636)
+        ),
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
 }
