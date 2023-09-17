@@ -19,7 +19,7 @@ font-family: 'Poppins', sans-serif;
     font-family: "JetBrains Mono", monospace;
     color: white;
     transition: 200ms;
-    /* border: 2px dashed rgba(255, 0, 0, 0.3); */
+    border: 2px dashed rgba(255, 0, 0, 0.3);
 }
 
 html {
@@ -338,6 +338,11 @@ html {
 #Tracks h3 {
     font-size: 1.75rem;
     margin-bottom: 2rem;
+    text-align: center;
+}
+
+#Tracks p {
+    text-align:justify
 }
 
 .trackCards {
@@ -349,12 +354,13 @@ html {
 
 .trackCard {
     display: flex;
+    flex-wrap: wrap;
     justify-content: first baseline;
     align-items: center;
     flex-direction: column;
-    height: 200px;
-    width: 300px;
-    margin: 2rem;
+    height: fit-content;
+    width: 400px;
+    margin: 1rem;
     background-color: white;
     border-radius: 8px;
 }
@@ -367,7 +373,8 @@ html {
 
 .trackCard p {
     color: black;
-    font-family: "Poppins", sans-serif;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 0.9rem;
 }
 
 #Rewards {
@@ -418,6 +425,7 @@ html {
 .rewardCard p {
     font-family: "Poppins", sans-serif;
     color: rgb(255, 255, 255);
+    text-align: center;
 }
 
 #reward1 {
@@ -535,6 +543,7 @@ html {
 
 .organizer p {
     text-align: center;
+    font-family: 'Poppins', sans-serif;
 
 }
 
