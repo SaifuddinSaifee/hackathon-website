@@ -185,18 +185,6 @@ html {
     font-weight: 900;
 }
 
-.abth2 {
-    font-size: 1.5rem;
-    margin: 3rem 0 1rem 0;
-    font-weight: 900;
-}
-
-.abth3 {
-    font-size: 1.25rem;
-    margin: 3rem 0 1rem 0;
-    font-weight: 900;
-}
-
 #about p {
     font-family: "Poppins", sans-serif;
     font-size: 1.2rem;
@@ -249,7 +237,6 @@ html {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
 }
 
 .tlcard h2 {
@@ -524,18 +511,11 @@ html {
     border-radius: 2rem;
     border: 3px 1px 1px 3px;
     margin: 2rem;
-    margin-bottom: 5rem;
 }
 
 .organizer h4 {
     font-size: 1.2rem;
     font-weight: 900;
-    text-align: center;
-}
-
-.organizer p {
-    text-align: center;
-
 }
 
 /* Sponsors */
