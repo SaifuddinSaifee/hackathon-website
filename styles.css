@@ -421,6 +421,11 @@ html {
     transform: scale(1.1);
 }
 
+.rewardCard h3 em {
+    font-size: 2.3rem;
+    font-weight: 900;
+}
+
 .rewardCard h4 {
     font-family: "Poppins", sans-serif;
     color: rgb(255, 255, 255);
@@ -435,26 +440,6 @@ html {
     font-size: 1.3rem;
 }
 
-/* #reward1 {
-    scale: 1;
-}
-#reward1:hover {
-    scale: 0.97;
-}
-
-#reward2 {
-    scale: 1.2;
-}
-#reward2:hover {
-    scale: 1.17;
-}
-
-#reward3 {
-    scale: 0.9;
-}
-#reward3:hover {
-    scale: 0.87;
-} */
 
 /* Mentor */
 #team {
