@@ -817,6 +817,16 @@ html {
         margin-bottom: 1rem;
     }
 
+    #about p {
+        /* display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: fit-content; */
+        width: 100%;
+        padding:  0 1rem;
+        text-align: justify;
+    }
+
     .info-div {
         width: 80%;
     }
