@@ -1,23 +1,16 @@
-// 576AE8
-// 7474F4
-// 818DF7
-// B5A5FB
-// COC8FC
+document.addEventListener('DOMContentLoaded', function() {
+    const hamburger = document.querySelector('.hamburger');
+    const navList = document.querySelector('.navlist');
 
-// document.addEventListener("mousemove", function (event) {
-//     var cursorShadow = document.querySelector(".cursor-shadow");
-//     var cursorSize = 20; // Adjust this value to match the size of your cursor shadow
+    hamburger.addEventListener('click', function() {
+        navList.classList.toggle('nav-active');
+    });
+});
 
-//     cursorShadow.style.left = event.clientX - cursorSize / 2 + "px";
-//     cursorShadow.style.top = event.clientY - cursorSize / 2 + "px";
-// });
+document.querySelector('.hamburger').addEventListener('click', function () {
+    const navList = document.querySelector('.navlist');
+    const hamburger = document.querySelector('.hamburger');
 
-// document.addEventListener("mouseenter", function () {
-//     var cursorShadow = document.querySelector(".cursor-shadow");
-//     cursorShadow.classList.add("active");
-// });
-
-// document.addEventListener("mouseleave", function () {
-//     var cursorShadow = document.querySelector(".cursor-shadow");
-//     cursorShadow.classList.remove("active");
-// });
+    navList.classList.toggle('nav-hidden');
+    hamburger.classList.toggle('active'); // This will change the hamburger to a cross
+});

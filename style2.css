@@ -118,6 +118,7 @@ html {
     border: 4px solid transparent;
     text-decoration: none;
     font-size: 1rem;
+    cursor: pointer;
 }
 
 .jw-btn:hover {
@@ -182,6 +183,18 @@ html {
 #about h1 {
     font-size: 2.6rem;
     margin-bottom: 3rem;
+    font-weight: 900;
+}
+
+.abth2 {
+    font-size: 1.5rem;
+    margin: 3rem 0 1rem 0;
+    font-weight: 900;
+}
+
+.abth3 {
+    font-size: 1.25rem;
+    margin: 3rem 0 1rem 0;
     font-weight: 900;
 }
 
@@ -325,6 +338,11 @@ html {
 #Tracks h3 {
     font-size: 1.75rem;
     margin-bottom: 2rem;
+    text-align: center;
+}
+
+#Tracks p {
+    text-align: justify;
 }
 
 .trackCards {
@@ -332,16 +350,18 @@ html {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .trackCard {
     display: flex;
+    flex-wrap: wrap;
     justify-content: first baseline;
     align-items: center;
     flex-direction: column;
-    height: 200px;
-    width: 300px;
-    margin: 2rem;
+    height: fit-content;
+    width: 50%;
+    margin: 1rem;
     background-color: white;
     border-radius: 8px;
 }
@@ -354,7 +374,8 @@ html {
 
 .trackCard p {
     color: black;
-    font-family: "Poppins", sans-serif;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 0.9rem;
 }
 
 #Rewards {
@@ -395,6 +416,15 @@ html {
     border-radius: 50%;
 }
 
+.rewardCard:hover {
+    transform: scale(1.1);
+}
+
+.rewardCard h3 em {
+    font-size: 2.3rem;
+    font-weight: 900;
+}
+
 .rewardCard h4 {
     font-family: "Poppins", sans-serif;
     color: rgb(255, 255, 255);
@@ -405,27 +435,8 @@ html {
 .rewardCard p {
     font-family: "Poppins", sans-serif;
     color: rgb(255, 255, 255);
-}
-
-#reward1 {
-    scale: 1;
-}
-#reward1:hover {
-    scale: 0.97;
-}
-
-#reward2 {
-    scale: 1.2;
-}
-#reward2:hover {
-    scale: 1.17;
-}
-
-#reward3 {
-    scale: 0.9;
-}
-#reward3:hover {
-    scale: 0.87;
+    text-align: center;
+    font-size: 1.3rem;
 }
 
 /* Mentor */
@@ -452,6 +463,7 @@ html {
 .mentors h3 {
     font-size: 2rem;
     margin-top: 0.2rem;
+    text-align: center;
 }
 
 .mentors-list {
@@ -486,7 +498,7 @@ html {
 .team-img {
     height: 200px;
     width: 200px;
-    border: none;
+    border: 3px solid rgb(255, 255, 255);
     border-radius: inherit;
 }
 
@@ -501,21 +513,38 @@ html {
 
 .organizers h3 {
     font-size: 2rem;
+    margin: 3rem;
+    text-align: center;
+}
+
+.organizers h3 {
+    font-size: 2rem;
     margin-top: 0.2rem;
+    text-align: center;
 }
 
 .organizer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     height: 200px;
     width: 200px;
-    border: 2px solid white;
     border-radius: 2rem;
     border: 3px 1px 1px 3px;
     margin: 2rem;
+    margin-bottom: 5rem;
 }
 
 .organizer h4 {
     font-size: 1.2rem;
     font-weight: 900;
+    text-align: center;
+}
+
+.organizer p {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
 }
 
 /* Sponsors */
@@ -532,7 +561,12 @@ html {
 #sponsors h1 {
     font-size: 2.6rem;
     margin: 3rem;
+    margin-top: 1rem;
     font-weight: 900;
+}
+
+#sponsors h2 {
+    margin: 4rem;
 }
 
 .sponsors-list {
@@ -646,4 +680,304 @@ html {
     margin: 1rem;
     font-size: 3rem;
     font-style: italic;
+}
+
+/* Add these media queries to the end of your CSS */
+
+/* For tablet devices */
+@media only screen and (max-width: 1024px) {
+    .navbar {
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .navlist {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navlist li {
+        margin-bottom: 1rem;
+    }
+
+    #home {
+        height: 700px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .main {
+        width: 90%;
+    }
+
+    #home img {
+        height: 250px;
+    }
+
+    .tlcard1,
+    .tlcard2,
+    .tlcard3,
+    .tlcard4 {
+        width: 400px;
+        height: 200px;
+    }
+
+    .trackCard {
+        width: 100%;
+    }
+
+    .spnsr-img {
+        max-width: 100%;
+        margin: 1rem 0;
+    }
+}
+
+/* For mobile devices */
+@media only screen and (max-width: 768px) {
+    html {
+        padding: 0.3rem;
+    }
+
+    .navbar-header {
+        display: flex;
+        align-items: center; /* vertically align */
+        justify-content: space-around; /* distribute space between logo and hamburger */
+        width: 100%;
+    }
+
+    .hamburger {
+        background: none;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 24px;
+        width: 24px;
+    }
+
+    .hamburger span {
+        background: rgb(255, 255, 255);
+        display: block;
+        height: 2px;
+        width: 24px;
+        border-radius: 2px;
+        transition: 0.3s;
+    }
+
+    /* For Cross Icon */
+    .hamburger.active span:nth-child(1) {
+        transform: rotate(45deg) translateY(10px);
+        background: white;
+    }
+
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active span:nth-child(3) {
+        transform: rotate(-45deg) translateY(-10px);
+        background: white;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .navlist {
+        display: none; /* Hide by default and we'll show this on click of hamburger */
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .navlist.nav-active {
+        display: block;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar img {
+        height: 40px;
+        vertical-align: middle;
+    }
+
+    .navlist {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navlist li {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    .info-div {
+        width: 80%;
+    }
+
+    .info-div {
+        width: 80%;
+    }
+
+    .evaluation {
+        width: 90%;
+        /* font-size: 0.8rem; */
+    }
+
+    .evaluation {
+        width: 90%;
+        /* font-size: 0.8rem; */
+    }
+
+    /* .timeline-cards {
+        transform: scale(0.9);
+    } */
+
+    .timeline-cards h2 {
+        font-size: 1rem;
+        margin: 0;
+        width: 80%;
+        text-align: center;
+    }
+
+    .tldiv img {
+        height: 90px;
+        margin: 1.5rem auto;
+    }
+
+    .tldiv .chev3 {
+        margin-bottom: 2.5rem;
+    }
+
+    #home {
+        text-align: center;
+    }
+
+    #home img {
+        height: 200px;
+    }
+
+    .trackCard {
+        margin: 1rem 0;
+    }
+
+    .trackCard p {
+        width: 100%;
+    }
+
+    #team h1 {
+        margin: 0;
+        font-size: 2.25rem;
+    }
+
+    #sponsors h2 {
+        margin: 2rem;
+        font-size: 1.15rem;
+    }
+
+    #faqs p {
+        text-align: center;
+    }
+
+    .qna {
+        font-size: 1.2rem;
+        width: 95%;
+    }
+
+    .org-list {
+        width: 100%;
+    }
+
+    .organizer {
+        width: 200px;
+        margin: 2rem 1rem 3rem 1rem;
+    }
+
+    .organizers h3 {
+        font-size: 2rem;
+        margin: 1rem;
+        text-align: center;
+    }
+
+    .mentors h3 {
+        text-align: center;
+    }
+
+    .team-img,
+    .spnsr-img {
+        width: 150px;
+        height: 150px;
+        margin-bottom: 1rem;
+    }
+
+    .revealingsoon {
+        margin: 1rem;
+        font-size: 2rem;
+        font-style: italic;
+    }
+
+    .tlcard1,
+    .tlcard2,
+    .tlcard3,
+    .tlcard4 {
+        width: 250px;
+        height: 125px;
+    }
+
+    .rewardCard {
+        font-family: "Poppins", sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 300px;
+        width: 300px;
+        margin: 0;
+        background: linear-gradient(60deg, #b5a5fb, #576ae8);
+        color: rgb(255, 255, 255);
+        border: 2px solid;
+        border-radius: 50%;
+        transform: scale(0.75);
+    }
+}
+
+/* For smaller mobile devices */
+@media only screen and (max-width: 480px) {
+    .home-info h1 {
+        font-size: 2.5rem;
+    }
+
+    .home-info h4 {
+        font-size: 1.2rem;
+    }
+
+    .tlcard1,
+    .tlcard2,
+    .tlcard3,
+    .tlcard4 {
+        width: 250px;
+        height: 125px;
+    }
+
+    #home img {
+        height: 150px;
+    }
+
+    .mentor,
+    .organizer {
+        width: 200px;
+        height: 200px;
+    }
+
+    .team-img,
+    .spnsr-img {
+        width: 150px;
+        height: 150px;
+    }
 }
