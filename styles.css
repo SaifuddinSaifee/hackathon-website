@@ -817,7 +817,7 @@ html {
         margin-bottom: 1rem;
     }
 
-    #about p {
+    #about .mainp {
         /* display: flex;
         flex-direction: column;
         align-items: center;
